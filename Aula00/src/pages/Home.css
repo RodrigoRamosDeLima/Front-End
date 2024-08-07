@@ -1,9 +1,6 @@
-.app-container{
+.conteudo-Home{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aqua;
 }
-.imagiLoka{
-    width: 400px;
-    
-  }

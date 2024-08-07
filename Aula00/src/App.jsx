@@ -1,20 +1,20 @@
 
 import './App.css'
-import Conteudo from './components/Conteudo'
-import Header from './components/Header'
+
+import Home from './pages/Home.jsx'
 
 function App() {
 
 
   return (
     <div className='app-container'>
-    <Header/>
-    <Conteudo/>
-    <Conteudo/>
-    <Conteudo/>
-
+   <img className="imagiLokaa" src="./images/qualquer-coisa.png" alt="" />
+  
+  <Home/>
+    
     </div>
   )
 }
+
 
 export default App
