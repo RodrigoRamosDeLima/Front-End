@@ -1,0 +1,10 @@
+.produto-container{
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    cursor: cell;
+    width: 200px;
+    padding: 10px ;
+
+}
