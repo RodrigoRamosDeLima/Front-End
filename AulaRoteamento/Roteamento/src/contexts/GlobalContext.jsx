@@ -40,6 +40,7 @@ export const GlobalContextProvider = ({ children }) => {
 
     return(
         <GlobalContext.Provider value={{usuarioLogado ,usuarios, setUsuarios}}>
+            
             {children}
         </GlobalContext.Provider>
     )

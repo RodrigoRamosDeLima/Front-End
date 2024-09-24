@@ -1,11 +1,13 @@
 
 import Navbar from '../components/Navbar'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { GlobalContext } from '../contexts/GlobalContext'
 
 function Home() {
 
     const {usuarioLogado,usuarios,setUsuarios} = useContext(GlobalContext)
+    const [inputName, setInputNome] = useState("")
+    const [inputEmail, setInputEmail] = useState("")
 
     function inventarUsuario(){
         let usuarioNovo ={
@@ -15,6 +17,15 @@ function Home() {
         }
         setUsuarios([...usuarios, usuarioNovo])
     }
+    function cadastrarUsuario(){
+      let usuarioNovo ={
+          id: Date.now(),
+          nome: inputName,
+          email: inputEmail
+      }
+      setUsuarios([...usuarios, usuarioNovo])
+  }
+
 
   return (
     <div>
@@ -33,6 +44,22 @@ function Home() {
             
       ))}
       </div>
+
+      <label htmlFor="">Nome</label>
+      <input type="text" 
+      value={inputName}
+      onChange={(event) => setInputNome(event.target.value)}/>
+
+      <label htmlFor="">Email</label>
+      <input type="email" 
+      value={inputEmail}
+      onChange={(event) => setInputEmail(event.target.value)}/>
+      
+      <button onClick={cadastrarUsuario}>Cadastrar</button>
+
+
+
+
       <button onClick={inventarUsuario}>Criar Usuario</button>
       
       <h2>Homezinha</h2>
