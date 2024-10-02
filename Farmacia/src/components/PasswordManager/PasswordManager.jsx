@@ -1,7 +1,7 @@
 // PasswordManager.jsx
 import React, { useState } from 'react';
 import './PasswordManager.css';
-import QueueDisplay from './Display';
+import QueueDisplay from "../Display/QueueDisplay";
 
 function PasswordManager() {
   const [normalQueue, setNormalQueue] = useState([]);

@@ -1,0 +1,14 @@
+.logo-direction {
+  display: flex;
+  align-items: center;
+}
+
+.logo-small {
+  width: 100px;
+}
+
+.logo-text {
+  font-size: 100px;
+  color: var(--cor-1);
+  padding-top: 20px;
+}

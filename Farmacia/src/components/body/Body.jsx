@@ -1,7 +1,7 @@
-
+import React from 'react';
 import './Body.css';
-import Section from './Section.jsx';
-import PasswordManager from './PasswordManager';
+import Section from '../Section/Section';
+import PasswordManager from '../PasswordManager/PasswordManager';
 
 function Body({ normalQueue, preferentialQueue, setNormalQueue, setPreferentialQueue, setCurrentPassword }) {
   return (
@@ -9,7 +9,7 @@ function Body({ normalQueue, preferentialQueue, setNormalQueue, setPreferentialQ
       <div className="principal">
         <h2 className="heading">Conheça a Nova Direção</h2>
         <Section />
-        <PasswordManager 
+        <PasswordManager
           normalQueue={normalQueue}
           preferentialQueue={preferentialQueue}
           setNormalQueue={setNormalQueue}
