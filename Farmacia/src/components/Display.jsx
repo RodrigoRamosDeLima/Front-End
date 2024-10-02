@@ -36,6 +36,6 @@ function QueueDisplay({ normalQueue, preferentialQueue, currentPassword }) {
       </div>
     </div>
   );
-}
+} 
 
 export default QueueDisplay;
